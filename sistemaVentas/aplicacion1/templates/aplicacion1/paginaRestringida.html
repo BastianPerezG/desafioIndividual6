@@ -1,0 +1,222 @@
+{% extends "aplicacion1/base.html" %}
+{% load static %}
+{% block content %}
+<section class=" container mt-5">
+    <h3>Bienvenido <strong>{{primer_nombre}} {{segundo_nombre}}</strong>  a nuestro catálogo de productos.</h3>
+</section>
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto1.png' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 019452</p>
+                            <h5 class="fw-bolder shop-item-title">Lavalozas Ecológico Fuzol</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $1890
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto2.jpg' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 064532</p>
+                            <h5 class="fw-bolder shop-item-title">Antigrasas Mr. Músculo</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $3550
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto3.jpg' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 033542</p>
+                            <h5 class="fw-bolder shop-item-title">Antigrasas Multiuso KH-7</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $4290
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto4.jpg' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 075266</p>
+                            <h5 class="fw-bolder shop-item-title">Limpiador de piso Clorox</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $2550
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto5.jpg' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 019452</p>
+                            <h5 class="fw-bolder shop-item-title">Limpiador de piso Igenix</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $2590
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100 producto">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto6.png' %}"alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center detalle-producto">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 022314</p>
+                            <h5 class="fw-bolder shop-item-title ">Detergente líquido Ariel</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $4500
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100 producto">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto7.jpg' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center detalle-producto">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 085512</p>
+                            <h5 class="fw-bolder shop-item-title ">Detergente en polvo Omo</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $4200
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 shop-item">
+                <div class="card h-100 producto">
+                    <!-- Product image-->
+                        <img class="card-img-top shop-item-image" src="{% static 'assets/img/producto8.jpg' %}" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4 shop-item-details">
+                        <div class="text-center detalle-producto">
+                            <!-- Product name-->
+                            <p class="codigo-producto">Cód. 005711</p>
+                            <h5 class="fw-bolder shop-item-title ">Bolsa ecológica Superior</h5>
+                            <!-- Product price-->
+                            <div class="shop-item-price">
+                                $460
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto shop-item-button" type="button">Añadir al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
