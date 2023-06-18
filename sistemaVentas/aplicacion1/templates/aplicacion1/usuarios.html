@@ -13,17 +13,19 @@
             <th scope="col">Nombre de Usuario</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
-            <th scope="col">Edad</th>
             <th scope="col">Correo</th>
         </thead>
         <tbody>
             {% for usuario in usuarios %}
             <tr>
-                <td><img src="{{usuario.imagen}}" alt="Imagen de perfil de {{usuario.nombre}} {{usuario.apellido}}"></td>
-                <td>{{usuario.nombreUsuario}}</td>
-                <td>{{usuario.nombre}}</td>
-                <td>{{usuario.apellido}}</td>
-                <td>{{usuario.edad}}</td>
+                {% if usuario.image %}
+                <td><img src="{{ usuario.image.url }}" alt="Imagen de perfil de {{ usuario.first_name }} {{ usuario.last_name }}" width="50px"></td>
+                {%else%}
+                <td><img src="{% static 'assets/img/foto_perfil.png' %}" alt="Imagen de perfil de {{usuario.first_name}} {{usuario.last_name}}" width="50px"></td>
+                {%endif%}
+                <td>{{usuario.username}}</td>
+                <td>{{usuario.first_name}}</td>
+                <td>{{usuario.last_name}}</td>
                 <td>{{usuario.email}}</td>
             </tr>
             {% endfor %}

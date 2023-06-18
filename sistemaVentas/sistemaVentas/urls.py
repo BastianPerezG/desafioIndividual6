@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from aplicacion1.views import LandingPage, Usuarios, FormularioUsuariosView, PaginaRestringidaView
+from aplicacion1.views import LandingPage, Usuarios, FormularioUsuariosView, PaginaRestringidaView, RegistroView
 from django.urls import include
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth.decorators import login_required
@@ -29,4 +29,5 @@ urlpatterns = [
     path("login/", LoginView.as_view(), name="login"),
     path("logout/", LogoutView.as_view(), name="logout"),
     path("paginarestringida", login_required(PaginaRestringidaView.as_view()), name="paginaRestringida"),
+    path("registrarse", RegistroView.as_view(), name="registrarse"),
 ]
