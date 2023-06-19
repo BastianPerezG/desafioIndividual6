@@ -19,7 +19,7 @@
             {% for usuario in usuarios %}
             <tr>
                 {% if usuario.image %}
-                <td><img src="{{ usuario.image.url }}" alt="Imagen de perfil de {{ usuario.first_name }} {{ usuario.last_name }}" width="50px"></td>
+                <td><img src="{{ usuario.image}}" alt="Imagen de perfil de {{ usuario.first_name }} {{ usuario.last_name }}" width="50px"></td>
                 {%else%}
                 <td><img src="{% static 'assets/img/foto_perfil.png' %}" alt="Imagen de perfil de {{usuario.first_name}} {{usuario.last_name}}" width="50px"></td>
                 {%endif%}
