@@ -1,9 +1,6 @@
 # desafioIndividual6
 En este repositorio estará el desafío individual 6 del Bootcamp FullStack Python, el cual consiste en la creación de usuarios de manera dinámica, donde ellos también puedan escoger a que grupo pertenecer, así tener permisos diferenciados
 
-# desafioIndividual6
-En este repositorio estará el desafío individual 6 del Bootcamp FullStack Python, el cual consiste en la creación de usuarios de manera dinámica, donde ellos también puedan escoger a que grupo pertenecer, así tener permisos diferenciados
-
 Documentación de uso.
 
 -Descargar el Zip desde el github -Descomprimir y abrir a través de su editor de código preferido -Ingresar a la carpeta sistemaVentas, abrir un terminal y correr el comando python manage.py runserver -Luego ingresar desde un navegador web al localhost http://127.0.0.1:8000/ -Una vez dentro debería poder visualizar la landing page.
